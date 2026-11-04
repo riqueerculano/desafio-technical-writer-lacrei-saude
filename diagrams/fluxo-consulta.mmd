@@ -1,0 +1,31 @@
+flowchart TD
+    A["Usuário acessa a página"]
+    B["Front-end apresenta filtros"]
+    C["Usuário informa critérios de pesquisa"]
+    D["Front-end envia requisição GET"]
+    E["Back-end recebe a requisição"]
+    F{"Parâmetros válidos?"}
+    G["Retorna erro 400"]
+    H["Aplica regras de negócio"]
+    I["Consulta banco de dados"]
+    J{"Existem resultados?"}
+    K["Retorna profissionais encontrados"]
+    L["Retorna lista vazia"]
+    M["Front-end apresenta os perfis"]
+    N["Front-end apresenta Empty State"]
+    O["Front-end apresenta mensagem de erro"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -->|Não| G
+    G --> O
+    F -->|Sim| H
+    H --> I
+    I --> J
+    J -->|Sim| K
+    J -->|Não| L
+    K --> M
+    L --> N

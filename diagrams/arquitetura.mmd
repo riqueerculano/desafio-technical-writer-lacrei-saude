@@ -1,0 +1,12 @@
+flowchart LR
+    U["Usuário"]
+    FE["Front-end<br/>Next.js e TypeScript"]
+    API["Back-end<br/>Django REST Framework"]
+    DB[("Banco de dados<br/>PostgreSQL")]
+
+    U --> FE
+    FE -->|"Requisição HTTP"| API
+    API -->|"Consulta e operações"| DB
+    DB -->|"Dados"| API
+    API -->|"Resposta JSON"| FE
+    FE --> U
