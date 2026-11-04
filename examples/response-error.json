@@ -1,0 +1,4 @@
+{
+  "error": "INVALID_PAGE",
+  "message": "O parâmetro page deve ser um número inteiro positivo."
+}

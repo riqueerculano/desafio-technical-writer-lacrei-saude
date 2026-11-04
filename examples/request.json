@@ -1,0 +1,10 @@
+{
+  "method": "GET",
+  "endpoint": "/profissionais/",
+  "query_params": {
+    "especialidade": "psicologia",
+    "cidade": "sao-paulo",
+    "page": 1,
+    "page_size": 10
+  }
+}

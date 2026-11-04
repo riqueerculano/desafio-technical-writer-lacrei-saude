@@ -1,0 +1,19 @@
+{
+  "count": 25,
+  "next": "https://api.exemplo.com/profissionais/?page=3&page_size=10",
+  "previous": "https://api.exemplo.com/profissionais/?page=1&page_size=10",
+  "results": [
+    {
+      "id": 21,
+      "nome": "Ana Silva",
+      "especialidade": "Psicologia",
+      "cidade": "São Paulo"
+    },
+    {
+      "id": 22,
+      "nome": "Carlos Souza",
+      "especialidade": "Psicologia",
+      "cidade": "São Paulo"
+    }
+  ]
+}
